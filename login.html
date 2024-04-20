@@ -1,0 +1,17 @@
+04.18 11:51 AM
+
+
+<div class="container">
+        <h1><u>DataFlair Voting System</u></h1>
+        <div class="form-container">
+            <h1>Login</h1>
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <input type="text" placeholder="Username" name="uname">
+                <input type="password" placeholder="Password" name="password">
+                <button type="submit">Login</button>
+            </form>
+            <p>Not registered? <a href="{% url 'register' %}">click here</a></p>
+        </div>
+    </div>
+
